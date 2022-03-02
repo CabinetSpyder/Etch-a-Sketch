@@ -27,7 +27,7 @@ body{
     flex-flow: row wrap;
 }
 
-.grid{
+.grid16{
     
     max-width: calc(600px/16);
     max-height: calc(600px/16);
@@ -35,13 +35,26 @@ body{
     min-height: calc(600px/16);
 }
 
+.grid32{
+    
+    max-width: calc(600px/32);
+    max-height: calc(600px/32);
+    min-width: calc(600px/32);
+    min-height: calc(600px/32);
+}
+
+.grid64{
+    
+    max-width: calc(600px/64);
+    max-height: calc(600px/64);
+    min-width: calc(600px/64);
+    min-height: calc(600px/64);
+}
+
 .ToBlack{
     background-color: black;
 }
 
-.Restore{
-    background-color: white;
-}
 
 #bttPlaceholder{
     display: flex;
