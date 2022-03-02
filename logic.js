@@ -5,6 +5,16 @@ cell.classList.add("grid");
 let cellsNum = 16*16;
 
 for(let i=0; i<cellsNum; i++){
-    console.log(`Hola + ${i}`);
+    
     container.appendChild(cell.cloneNode(true));
 }
+
+const allCells = document.querySelectorAll(".grid");
+
+allCells.forEach((box) => {
+    
+    box.addEventListener("mousemove",  () => {
+        box.classList.add("ToBlack");
+    });
+
+});
